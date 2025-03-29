@@ -79,8 +79,14 @@ body {
     color: var(--grey);
     line-height: var(--line-height-normal);
     background: url(./images/EntireBackground.png);
-    background-size: 80%;
+    background-size: auto;
     overflow-x: hidden;
+}
+
+@media(max-width: 768px) {
+    body {
+        background-size: 225%;
+    }
 }
 
 .row {
@@ -483,6 +489,12 @@ body:not(.user-is-tabbing) a:focus {
     font-size: var(--font-size-normal);
 }
 
+@media (max-width: 768px) {
+    .header {
+        background-attachment: scroll;
+    }
+}
+
 .header__text {
     position: absolute;
     top: 50%;
@@ -522,7 +534,15 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media(max-width: 900px) {
-    .work__box .video-work__box {
+    .work__box {
+        align-items: initial;
+        flex-direction: column-reverse;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .video-work__box {
         align-items: initial;
         flex-direction: column-reverse;
     }
