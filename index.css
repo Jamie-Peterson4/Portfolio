@@ -78,7 +78,7 @@ body {
     font-weight: 400;
     color: var(--grey);
     line-height: var(--line-height-normal);
-    background-image: url(/images/EntireBackground.png);
+    background-image: url(./images/EntireBackground.png);
     background-size: 80%;
     overflow-x: hidden;
 }
